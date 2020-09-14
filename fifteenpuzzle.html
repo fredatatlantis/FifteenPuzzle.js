@@ -34,7 +34,7 @@ var evt             = new Event(),
         movesNum.childNodes[0].nodeValue = moveCnt;
     },
     restart         = function (confirmText) {
-        if (window.confirm(confirmText)) {
+        if (true/*window.confirm(confirmText)*/) {
             gameInfo.innerHTML = 'Moves: <strong id="moves">0</strong>';
             movesNum = document.getElementById('moves');
             movesNum.childNodes[0].nodeValue = 0;
