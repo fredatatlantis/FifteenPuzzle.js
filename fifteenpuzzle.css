@@ -6,23 +6,6 @@ h1 {
     text-align: center
 }
 
-@media screen and (min-width: 768px) {
-    body {
-        --tile-width: 70px;
-        --tile-spacing: 7px;
-        --tile-font: 32px;
-        *border-collapse: expression('separate', cellSpacing = '7px');
-    }    
-}
-@media screen and (max-width: 767px) {
-    body {
-        --tile-width: 70px;
-        --tile-spacing: 7px;
-        --tile-font: 32px;
-        *border-collapse: expression('separate', cellSpacing = '7px');
-    }
-}
-
 table {
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
@@ -32,16 +15,17 @@ table {
     margin: 0px auto;
     background-color: #FFE7A5;
     border-collapse: separate;
-    border-spacing: var(--tile-spacing);
+    border-spacing: 7px;
     padding: 0;
     border: solid 1px #aaa;
-    font-size: var(--tile-font);
+    font-size: 32px;
+    *border-collapse: expression('separate', cellSpacing = '10px');
 }
 
 table td {
-    width: var(--tile-width);
-    height: var(--tile-width);
-    padding: ;
+    width: 70px;
+    height: 70px;
+    padding: 0;
     margin: 0;
     top: 0;
     z-index: 0;
@@ -50,9 +34,9 @@ table td {
 
 table td a {
     position: absolute;
-    width: var(--tile-width);
-    height: var(--tile-width);
-    line-height: var(--tile-width);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
     display: block;
     text-decoration: none;
     padding: 0;
@@ -70,7 +54,7 @@ table td a {
 }
 
 .info {
-    width: 300;
+    width: 300px;
     margin: 15px auto 0 auto;
     border: solid 1px #ccc;
     overflow: hidden;
