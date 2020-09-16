@@ -6,6 +6,27 @@ h1 {
     text-align: center
 }
 
+body {
+    --english-green-color: #1B4D3E;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        --tile-width: 100px;
+        --tile-spacing: 10px;
+        --tile-font: 45px;
+        *border-collapse: expression('separate', cellSpacing = '10px');
+    }    
+}
+@media screen and (max-width: 767px) {
+    body {
+        --tile-width: 50px;
+        --tile-spacing: 5px;
+        --tile-font: 22px;
+        *border-collapse: expression('separate', cellSpacing = '5px');
+    }
+}
+
 table {
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
@@ -15,17 +36,16 @@ table {
     margin: 0px auto;
     background-color: #FFE7A5;
     border-collapse: separate;
-    border-spacing: 10px;
+    border-spacing: var(--tile-spacing);
     padding: 0;
     border: solid 1px #aaa;
-    font-size: 45px;
-    *border-collapse: expression('separate', cellSpacing = '10px');
+    font-size: var(--tile-font);
 }
 
 table td {
-    width: 100px;
-    height: 100px;
-    padding: 0;
+    width: var(--tile-width);
+    height: var(--tile-width);
+    padding: ;
     margin: 0;
     top: 0;
     z-index: 0;
@@ -34,9 +54,9 @@ table td {
 
 table td a {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
+    width: var(--tile-width);
+    height: var(--tile-width);
+    line-height: var(--tile-width);
     display: block;
     text-decoration: none;
     padding: 0;

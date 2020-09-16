@@ -23,12 +23,13 @@ Array.prototype.shuffle = function () {
 
 var FifteenPuzzle = function (evt, board) {
     "use strict";
-    this.speed      = 1;
+    this.speed      = 10;
 
     var tiles       = null,
         freeCell    = 15,
         tileNums    = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-        tileSize    = 110,
+        tileSize    = getComputedStyle(document.getElementsByTagName('body')[0]).getPropertyValue('--tile-width')
+        + getComputedStyle(document.getElementsByTagName('body')[0]).getPropertyValue('--tile-spacing'),
         moveCnt     = 0,
         self        = this,
         handler     = null,
