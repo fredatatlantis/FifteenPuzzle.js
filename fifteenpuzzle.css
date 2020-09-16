@@ -15,7 +15,7 @@ table {
     margin: 0px auto;
     background-color: #FFE7A5;
     border-collapse: separate;
-    border-spacing: 7px;
+    border-spacing: 6px;
     padding: 0;
     border: solid 1px #aaa;
     font-size: 32px;
@@ -23,8 +23,8 @@ table {
 }
 
 table td {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     padding: 0;
     margin: 0;
     top: 0;
@@ -34,9 +34,9 @@ table td {
 
 table td a {
     position: absolute;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
     display: block;
     text-decoration: none;
     padding: 0;
