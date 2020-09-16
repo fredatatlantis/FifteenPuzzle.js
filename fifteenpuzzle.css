@@ -6,24 +6,20 @@ h1 {
     text-align: center
 }
 
-body {
-    --english-green-color: #1B4D3E;
-}
-
 @media screen and (min-width: 768px) {
     body {
-        --tile-width: 100px;
-        --tile-spacing: 10px;
-        --tile-font: 45px;
-        *border-collapse: expression('separate', cellSpacing = '10px');
+        --tile-width: 70px;
+        --tile-spacing: 7px;
+        --tile-font: 32px;
+        *border-collapse: expression('separate', cellSpacing = '7px');
     }    
 }
 @media screen and (max-width: 767px) {
     body {
-        --tile-width: 50px;
-        --tile-spacing: 5px;
-        --tile-font: 22px;
-        *border-collapse: expression('separate', cellSpacing = '5px');
+        --tile-width: 70px;
+        --tile-spacing: 7px;
+        --tile-font: 32px;
+        *border-collapse: expression('separate', cellSpacing = '7px');
     }
 }
 
@@ -74,7 +70,7 @@ table td a {
 }
 
 .info {
-    width: 430px;
+    width: 300;
     margin: 15px auto 0 auto;
     border: solid 1px #ccc;
     overflow: hidden;
